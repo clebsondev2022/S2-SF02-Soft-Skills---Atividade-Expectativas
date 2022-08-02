@@ -1,0 +1,57 @@
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-bottom: 2px solid gray;
+    padding: 0.75rem;
+    animation-name: animate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: rgb(204, 5, 208);
+    }
+    100% {
+        color: blue;
+    }
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+    margin: 1rem 1rem;
+    font-size: 30px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+section {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 1rem;
+    background-color: rgb(219, 215, 215);
+    animation-name: border-animate;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+    animation-direction: initial;
+    animation-iteration-count: infinite;
+}
+
+@keyframes border-animate {
+    0% {
+        border: 3px solid rgb(245, 9, 9);
+    }
+    50% {
+        border: 3px solid rgb(7, 242, 62);
+    }
+    100% {
+        border: 3px solid rgb(50, 9, 233);
+    }
+}
